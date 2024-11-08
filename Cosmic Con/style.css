@@ -77,7 +77,7 @@ h1 {
 }
 .menu ul{
     display: flex;
-    gap: 15px;
+    gap: 25px;
     list-style: none;
 }
 a {
