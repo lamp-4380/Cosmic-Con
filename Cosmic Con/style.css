@@ -1,12 +1,14 @@
 .inter-font {
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }.painel {
     background-color: red;
     color: white;
     display: flex;
     justify-content: center;
+    height: 30px;
+    align-items: center;
 }
 * {
     margin: 0;
@@ -67,4 +69,25 @@
     font-size: 18px;
     color: var(--text-color1);
 
+}
+.header {
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+.logo {
+    display: flex;
+    width: 50px;
+    height: 50px;
+}
+.menu ul{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+a {
+    color: white;
+    text-decoration: none;
 }
