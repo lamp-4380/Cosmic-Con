@@ -105,10 +105,49 @@
 }
 .menu ul{
     display: flex;
-    gap: 15px;
+    gap: 25px;
     list-style: none;
 }
 a {
     color: white;
     text-decoration: none;
+}
+.home {
+    background-image: url(../Imagens/Fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 481px;
+}
+body {
+    color: white;
+}
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+.home-content h1 {
+    font-size: 84px;
+    background-image: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(153,69,255,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.home-content p {
+    font-size: 20px;
+}
+.home-content button {
+    background-color: white;
+    width: 113px;
+    height: 41px;
+    border-radius: 8px;
+    border: none;
 }
