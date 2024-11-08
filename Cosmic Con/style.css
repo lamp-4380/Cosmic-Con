@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Inter", sans-serif;
 }
 
 :root {
     --color1: #350076;
     --color2: #21002C;
+    --text-color1: rgb(250, 238, 255);
 }
 
 .countdown-container {
@@ -19,9 +23,14 @@
     background: var(--color1);
 }
 
-h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+.countdown-container h1 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    background-image: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(153,69,255,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .countdown {
@@ -46,11 +55,19 @@ h1 {
 
 .time-box span {
     font-size: 52px;
-    color: #D1C4E9;
+    font-weight: 800;
+    background-image: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(153,69,255,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .time-box p {
     margin-top: 10px;
     font-size: 18px;
-    color: #B39DDB;
+    font-weight: 600;
+    background-image: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(153,69,255,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
