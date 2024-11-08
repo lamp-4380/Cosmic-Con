@@ -109,9 +109,11 @@
 a {
     color: white;
     text-decoration: none;
+    transition: 500ms ease-in-out;
 }
 a:hover {
-    
+    scale: 1.1;
+    text-decoration: underline;
 }
 .home {
     background-image: url(../Imagens/Fundo.png);
