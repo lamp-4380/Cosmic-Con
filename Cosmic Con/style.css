@@ -6,6 +6,8 @@
 }.painel {
     background-color: red;
     color: white;
+    display: flex;
+    justify-content: center;
 }
 * {
     margin: 0;
