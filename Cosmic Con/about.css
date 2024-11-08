@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #141214;
+    color: #FFFFFF;
+}
+
+.voltar {
+    display: inline-block;
+    margin: 20px;
+    font-size: 18px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.cima {
+    display: flex;
+    align-content: space-between;
+}
+.logo {
+  position: absolute;
+  top: 10px; 
+  right: 10px; 
+  width: 50px; 
+  height: auto;
+  border-radius: 0px;
+}
+.perfis {
+    display: flex;
+    flex-direction: column;
+    margin-left: 400px;
+    gap: 30px;
+    padding: 20px;
+}
+
+.perfil {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.icone{
+    width: 30px;
+    height: 30px;
+    border-radius: 0px;
+}
+
+img {
+    border-radius: 50px; 
+    width: 400px; 
+    height: 400px; 
+}
+
+.nome{
+    font-size: 40px;
+}
