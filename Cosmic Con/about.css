@@ -38,12 +38,7 @@ body {
     display: flex;
     gap: 100px;
     align-items: center;
-}
-
-.icone{
-    width: 30px;
-    height: 30px;
-    border-radius: 0px;
+    flex-wrap: wrap;
 }
 
 img {
@@ -54,4 +49,66 @@ img {
 
 .nome{
     font-size: 40px;
+}
+a {
+    color: white;
+} i {
+    font-size: 24px;
+}
+@media (max-width: 768px) {
+    /* Ajustes para celulares e tablets pequenos */
+    .logo {
+        width: 40px; /* Logo menor */
+        top: 5px;
+        right: 5px;
+    }
+
+    .voltar {
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    .perfis {
+        margin-left: 20px; /* Reduzir a margem para celulares */
+        gap: 20px; /* Menor espaçamento */
+        padding: 10px;
+    }
+
+    .perfil {
+        gap: 30px; /* Ajusta o gap entre os elementos */
+    }
+
+    img {
+        width: 250px; /* Reduzir o tamanho da imagem */
+        height: 250px;
+    }
+
+    .nome {
+        font-size: 30px; /* Ajuste no tamanho da fonte */
+    }
+}
+
+/* Media Query para tablets e dispositivos de tela média */
+@media (max-width: 1024px) {
+    .logo {
+        width: 45px;
+    }
+
+    .perfis {
+        margin-left: 150px; /* Menos margem para telas médias */
+        gap: 25px;
+    }
+
+    .perfil {
+        gap: 50px;
+    }
+
+    img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .nome {
+        font-size: 35px;
+    }
 }

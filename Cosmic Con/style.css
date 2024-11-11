@@ -99,10 +99,15 @@ a:hover {
 }
 .home-content button {
     background-color: white;
+    color: black;
     width: 113px;
     height: 41px;
     border-radius: 8px;
     border: none;
+}
+.home-content button:hover {
+    color: white;
+    background-color: black;
 }
 
 body {
@@ -332,5 +337,6 @@ font-weight: 100;
     width: 385px;
     height: 40px;
     box-sizing: border-box;
+    color: #353535;
     background-color: black;
 }
