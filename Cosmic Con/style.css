@@ -23,6 +23,209 @@
     --text-color1: rgb(250, 238, 255);
     --text-color1: rgb(253, 235, 255);
 }
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 12px;
+    font-size: 16px;
+    width: 385px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ 
+button:hover {
+    background-color: var(--color1);
+    color: white;
+}
+
+.header {
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 10px;
+    min-height: 7vh;
+}
+.logo {
+    display: flex;
+    width: 50px;
+    height: 50px;
+}
+.menu ul{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.home {
+    background-image: url(../Imagens/Fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+.home-content h1 {
+    font-size: 84px;
+    background-image: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(153,69,255,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.home-content p {
+    font-size: 20px;
+}
+.home-content button {
+    background-color: white;
+    width: 113px;
+    height: 41px;
+    border-radius: 8px;
+    border: none;
+}
+
+body {
+    background: rgb(0, 0, 0);
+    color: #fff;
+  }
+  
+.container {
+margin-bottom: 25px;
+background: linear-gradient(180deg, rgba(47,0,73,1) 24%, rgba(107,0,164,1) 50%, rgba(13,0,20,1) 100%);
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+min-height: 100vh;
+}
+
+.container h1 {
+font-size: 4em;
+margin-top: 60px;
+margin-bottom: 35px;
+background-image: linear-gradient(180deg, rgba(255,255,255,1) 30%, rgba(153,69,255,1) 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, 1fr);
+gap: 35px;
+max-width: 1080px;
+}
+
+.card {
+background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,0.304359243697479) 0%, rgba(13,0,20,0) 100%);
+backdrop-filter: 15px;
+border-radius: 15px;
+padding: 30px;
+box-shadow: 20px;
+box-shadow: 0 5px 15px rgba(255, 255, 255, 0.582);
+transition: transform 0.4s, box-shadow 0.4s;
+height: 364px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.card:hover {
+transform: translateY(-10px);
+box-shadow: 0 10px 30px rgba(255, 255, 255, 0.582);
+}
+
+.card h2 {
+font-size: 1.8rem;
+margin-bottom: 15px;
+color: #f0aaff;
+}
+
+.card p {
+font-size: 1.3rem;
+color: aliceblue;
+line-height: 1.5;
+}
+
+.icon {
+background:#591DDD;
+width: 60px;
+height: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 8px;
+margin-bottom: 20px;
+box-shadow: 0 0 50px 4px #5100ff;
+}
+
+.icon i {
+font-size: 45px;
+font-weight: 100;
+}
+
+.parceiros {
+    background-color: #000000;
+    padding: 40px ;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+    background-image: url(../Imagens/Group\ 4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+ 
+.title-parceiros h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fffefe;
+}
+ 
+ 
+.parceiros-logos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+ 
+ 
+.parceiros-logos img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+}
+ 
+.parceiros-logos img:hover {
+    transform: scale(1.1);
+}
 
 .countdown-container {
     display: flex;
@@ -88,159 +291,46 @@
     color: var(--text-color1);
 
 }
-.header {
+
+.inscriçao {
     display: flex;
-    background-color: black;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 0px 10px;
-    min-height: 7vh;
-}
-.logo {
-    display: flex;
-    width: 50px;
-    height: 50px;
-}
-.menu ul{
-    display: flex;
-    gap: 25px;
-    list-style: none;
-}
-a {
-    color: white;
-    text-decoration: none;
-}
-a:hover {
-    
-}
-.home {
-    background-image: url(../Imagens/Fundo.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: bottom;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 600px;
-}
-body {
-    color: white;
-}
-.home-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    background-color: black;
+    margin: 42px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 96%;
+    padding: 40px;
     text-align: center;
+    background-image: url(../Imagens/Group\ 4.png);
+    background-position-x: center;
+    border: 1px #353535 solid;
+    border-radius: 10px;
 }
-.home-content h1 {
-    font-size: 84px;
-    background-image: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(153,69,255,1) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.home-content p {
-    font-size: 20px;
-}
-.home-content button {
-    background-color: white;
-    width: 113px;
-    height: 41px;
-    border-radius: 8px;
-    border: none;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
-  }
-  
-  body {
-    background: rgb(47,0,73);
-    background: linear-gradient(180deg, rgba(47,0,73,1) 24%, rgba(107,0,164,1) 50%, rgba(13,0,20,1) 100%);
-    color: #fff;
-    font-family: "Inter", sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    min-height: 100vh;
-    padding: 20px;
-  }
-  
-  .container {
-    margin-bottom: 25px;
-  }
-
-  .container h1 {
-    font-size: 4em;
-    margin-bottom: 35px;
-    background-image: linear-gradient(180deg, rgba(255,255,255,1) 30%, rgba(153,69,255,1) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 35px;
-    max-width: 1080px;
-  }
-  
-  .card {
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,0.304359243697479) 0%, rgba(13,0,20,0) 100%);
-    backdrop-filter: 15px;
-    border-radius: 15px;
-    padding: 30px;
-    box-shadow: 20px;
-    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.582);
-    transition: transform 0.4s, box-shadow 0.4s;
-    height: 364px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.582);
-  }
-
-  .card h2 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: #f0aaff;
-  }
-
-  .card p {
-    font-size: 1.3rem;
-    color: aliceblue;
-    line-height: 1.5;
-  }
-
-  .icon {
-    background:#591DDD;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
+ 
+.inscriçao h1 {
+    font-size: 56px;
     margin-bottom: 20px;
-    box-shadow: 0 0 50px 4px #5100ff;
-  }
-
-  .icon i {
-    font-size: 45px;
-    font-weight: 100;
-  }
+    color: #ffffff;
+}
+ 
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+ 
+.input input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #353535;
+    border-radius: 5px;
+    width: 385px;
+    height: 40px;
+    box-sizing: border-box;
+    background-color: black;
+}
