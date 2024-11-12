@@ -1,20 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.painel {
-    background-color: red;
-    color: white;
-    display: flex;
-    justify-content: center;
-    height: 30px;
-    align-items: center;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
     scroll-behavior: smooth;
+    color: whitesmoke;
 }
 
 :root {
@@ -23,26 +15,22 @@
     --text-color1: rgb(250, 238, 255);
     --text-color1: rgb(253, 235, 255);
 }
-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    padding: 12px;
-    font-size: 16px;
-    width: 385px;
-    height: 40px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
- 
+
 button:hover {
     background-color: var(--color1);
     color: white;
 }
 
+/*-------------------SEÇÃO DO BANNER VERMELHO-------------------*/
+.painel {
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    align-items: center;
+}
+/*-------------------SEÇÃO DO HEADER/MENU-------------------*/
 .header {
     display: flex;
     background-color: black;
@@ -68,6 +56,8 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/*-------------------SEÇÃO HOME-------------------*/
 .home {
     background-image: url(../Imagens/Fundo.png);
     background-size: cover;
@@ -98,8 +88,8 @@ a:hover {
     font-size: 20px;
 }
 .home-content button {
-    background-color: white;
-    color: black;
+    background-color: var(--color2);
+    color: rgb(0, 0, 0);
     width: 113px;
     height: 41px;
     border-radius: 8px;
@@ -107,123 +97,118 @@ a:hover {
 }
 .home-content button:hover {
     color: white;
-    background-color: black;
+    background-color: violet;
 }
 
-body {
-    background: rgb(0, 0, 0);
-    color: #fff;
-  }
-  
+
+/*-------------------SEÇÃO DE PROGRAMAÇÃO-------------------*/
 .container {
-margin-bottom: 25px;
-background: linear-gradient(180deg, rgba(47,0,73,1) 24%, rgba(107,0,164,1) 50%, rgba(13,0,20,1) 100%);
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-min-height: 100vh;
+    background: linear-gradient(180deg, rgba(47,0,73,1) 24%, rgba(107,0,164,1) 50%, rgba(13,0,20,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 160vh;
 }
 
 .container h1 {
-font-size: 4em;
-margin-top: 60px;
-margin-bottom: 35px;
-background-image: linear-gradient(180deg, rgba(255,255,255,1) 30%, rgba(153,69,255,1) 100%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+    font-size: 4em;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    background-image: linear-gradient(180deg, rgba(255,255,255,1) 30%, rgba(153,69,255,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .grid {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(3, 1fr);
-gap: 35px;
-max-width: 1080px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 35px;
+    max-width: 1080px;
 }
 
 .card {
-background: rgb(0,0,0);
-background: linear-gradient(180deg, rgba(0,0,0,0.304359243697479) 0%, rgba(13,0,20,0) 100%);
-backdrop-filter: 15px;
-border-radius: 15px;
-padding: 30px;
-box-shadow: 20px;
-box-shadow: 0 5px 15px rgba(255, 255, 255, 0.582);
-transition: transform 0.4s, box-shadow 0.4s;
-height: 364px;
-display: flex;
-flex-direction: column;
-justify-content: center;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.304359243697479) 0%, rgba(13,0,20,0) 100%);
+    backdrop-filter: 15px;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 20px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.582);
+    transition: transform 0.4s, box-shadow 0.4s;
+    height: 364px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .card:hover {
-transform: translateY(-10px);
-box-shadow: 0 10px 30px rgba(255, 255, 255, 0.582);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.582);
 }
 
 .card h2 {
-font-size: 1.8rem;
-margin-bottom: 15px;
-color: #f0aaff;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #f0aaff;
 }
 
 .card p {
-font-size: 1.3rem;
-color: aliceblue;
-line-height: 1.5;
+    font-size: 1.3rem;
+    color: aliceblue;
+    line-height: 1.5;
 }
 
 .icon {
-background:#591DDD;
-width: 60px;
-height: 60px;
-display: flex;
-justify-content: center;
-align-items: center;
-border-radius: 8px;
-margin-bottom: 20px;
-box-shadow: 0 0 50px 4px #5100ff;
+    background:#591DDD;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 50px 4px #5100ff;
 }
 
 .icon i {
-font-size: 45px;
-font-weight: 100;
+    font-size: 45px;
+    font-weight: 100;
 }
 
+/*-------------------SEÇÃO DE PARCEIROS-------------------*/
 .parceiros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 1000px;
+    min-height: 35vh;
     background-color: #000000;
-    padding: 40px ;
-    margin-top: 50px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    text-align: center;
-    background-image: url(../Imagens/Group\ 4.png);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
  
 .title-parceiros h1 {
-    font-size: 24px;
+    font-size: 42px;
+    text-transform: uppercase;
     margin-bottom: 20px;
+    background-image: linear-gradient(180deg, rgba(255,255,255,1) 30%, rgba(153,69,255,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     color: #fffefe;
 }
- 
- 
+
 .parceiros-logos {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
+    align-content: center;
+    gap: 100px;
     margin-top: 20px;
 }
- 
- 
+
 .parceiros-logos img {
     width: 100px;
-    height: auto;
     object-fit: contain;
     transition: transform 0.3s ease-in-out;
 }
@@ -232,6 +217,7 @@ font-weight: 100;
     transform: scale(1.1);
 }
 
+/*-------------------SEÇÃO DE CRONOMETRO-------------------*/
 .countdown-container {
     display: flex;
     flex-direction: column;
@@ -245,14 +231,12 @@ font-weight: 100;
 .countdown-container h1 {
     font-size: 42px;
     font-weight: 800;
-    margin-bottom: 30px;
     background-image: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(153,69,255,1) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: var(--text-color1);
-    font-size: 32px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .countdown {
@@ -297,6 +281,15 @@ font-weight: 100;
 
 }
 
+/*-------------------SEÇÃO DE INSCRICAO-------------------*/
+.inscricao-fora {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+}
+
 .inscriçao {
     display: flex;
     flex-direction: column;
@@ -305,30 +298,32 @@ font-weight: 100;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
-    margin: 42px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 96%;
-    padding: 40px;
+    padding: 50px 0;
+    min-width: 1000px;
     text-align: center;
     background-image: url(../Imagens/Group\ 4.png);
     background-position-x: center;
-    border: 1px #353535 solid;
+    border: 1px #585858 solid;
     border-radius: 10px;
 }
  
 .inscriçao h1 {
     font-size: 56px;
     margin-bottom: 20px;
-    color: #ffffff;
+    background-image: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(153,69,255,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
- 
+
 .input {
     display: flex;
     flex-direction: column;
     gap: 15px;
     margin-bottom: 20px;
 }
- 
+
 .input input {
     padding: 12px;
     font-size: 16px;
@@ -338,5 +333,180 @@ font-weight: 100;
     height: 40px;
     box-sizing: border-box;
     color: #353535;
-    background-color: black;
+    background: transparent;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 385px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*-------------------SEÇÃO DE RODAPE-------------------*/
+.rodape {
+    background: #000000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/*--- MEDIA QUERIES PARA TABLET E MOBILE ---*/
+@media (max-width: 1024px) {
+    .home-content h1 {
+        font-size: 56px;
+    }
+    
+    .container h1 {
+        font-size: 3em;
+    }
+    
+    .grid {
+        grid-template-columns: 1fr;
+        padding: 0 50px;
+    }
+    
+    .parceiros-logos {
+        gap: 50px;
+    }
+    
+    .inscriçao {
+        min-width: 80%;
+        padding: 20px;
+    }
+    
+    .menu ul {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+    }
+
+    .container h1 {
+        font-size: 3em;
+    }
+    
+    .time-box {
+        width: 100px;
+        height: 120px;
+    }
+
+    .time-box span {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-content h1 {
+        font-size: 28px;
+    }
+
+    .home-content p {
+        font-size: 14px;
+    }
+    
+    .home-content button {
+        width: 100px;
+        height: 35px;
+    }
+    
+    .container h1 {
+        font-size: 2em;
+    }
+    .parceiros-logos {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .time-box {
+        width: 80px;
+        height: 100px;
+    }
+    .time-box p {
+        font-size: 12px;
+    }
+    .time-box span {
+        font-size: 32px;
+    }
+    .countdown {
+        gap: 10px;
+    }
+    .countdown-container {
+        min-height: 40vh;
+    }
+    .inscriçao {
+        min-width: 90%;
+    }
+    .inscricao-fora {
+        min-height: 50vh;
+    }
+    .parceiros {
+        min-width: 200px;
+        min-height: 85vh;
+    }
+    .parceiros-logos {
+        gap: 50px;
+    }
+}
+
+/*.parceiros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 1000px;
+    min-height: 35vh;
+    background-color: #000000;
+}
+ 
+.title-parceiros h1 {
+    font-size: 42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    background-image: linear-gradient(180deg, rgba(255,255,255,1) 30%, rgba(153,69,255,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #fffefe;
+}
+
+.parceiros-logos {
+    display: flex;
+    align-content: center;
+    gap: 100px;
+    margin-top: 20px;
+}
+
+.parceiros-logos img {
+    width: 100px;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+}
+ 
+.parceiros-logos img:hover {
+    transform: scale(1.1);
 }
