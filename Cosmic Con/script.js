@@ -1,4 +1,6 @@
-const targetDate = new Date(new Date().getFullYear(), 10, 16, 23, 59, 59);
+// contador
+
+const targetDate = new Date(new Date().getFullYear(), 10, 15, 23, 59, 59);
 
 function updateCountdown() {
     const now = new Date().getTime();
@@ -17,4 +19,31 @@ function updateCountdown() {
     }
 }
 
+// pop-up
+
 const countdownInterval = setInterval(updateCountdown, 1000);
+
+function mostrarPopup() {
+    const popup = document.createElement('div');
+    popup.classList.add('popup');
+    popup.innerHTML = `
+        <div class="popup-content">
+            <p>Inscrição confirmada com sucesso! 🎉</p>
+            <button onclick="fecharPopup()">Fechar</button>
+        </div>
+    `;
+
+    document.body.appendChild(popup);
+}
+
+function fecharPopup() {
+    const popup = document.querySelector('.popup');
+    if (popup) {
+        popup.remove();
+    }
+}
+
+document.getElementById('inscricao-btn').addEventListener('click', function(event) {
+    event.preventDefault(); 
+    mostrarPopup(); 
+});
