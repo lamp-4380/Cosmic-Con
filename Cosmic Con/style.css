@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+ 
 * {
     margin: 0;
     padding: 0;
@@ -8,19 +8,19 @@
     scroll-behavior: smooth;
     color: whitesmoke;
 }
-
+ 
 :root {
     --color1: #350076;
     --color2: #21002C;
     --text-color1: rgb(250, 238, 255);
     --text-color1: rgb(253, 235, 255);
 }
-
+ 
 button:hover {
     background-color: var(--color1);
     color: white;
 }
-
+ 
 /*-------------------SEÇÃO DO BANNER VERMELHO-------------------*/
 .painel {
     background-color: red;
@@ -59,7 +59,7 @@ li {
 li:hover {
     scale: 1.2;
 }
-
+ 
 /*-------------------SEÇÃO HOME-------------------*/
 .home {
     background-image: url(../Imagens/Fundo.png);
@@ -102,8 +102,8 @@ li:hover {
     color: white;
     background-color: violet;
 }
-
-
+ 
+ 
 /*-------------------SEÇÃO DE PROGRAMAÇÃO-------------------*/
 .container {
     background: linear-gradient(180deg, rgba(47,0,73,1) 24%, rgba(107,0,164,1) 50%, rgba(13,0,20,1) 100%);
@@ -113,7 +113,7 @@ li:hover {
     flex-direction: column;
     min-height: 160vh;
 }
-
+ 
 .container h1 {
     font-size: 4em;
     margin-top: 30px;
@@ -123,7 +123,7 @@ li:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
+ 
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -131,7 +131,7 @@ li:hover {
     gap: 35px;
     max-width: 1080px;
 }
-
+ 
 .card {
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,0.304359243697479) 0%, rgba(13,0,20,0) 100%);
@@ -146,24 +146,24 @@ li:hover {
     flex-direction: column;
     justify-content: center;
 }
-
+ 
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 30px rgba(255, 255, 255, 0.582);
 }
-
+ 
 .card h2 {
     font-size: 1.8rem;
     margin-bottom: 15px;
     color: #f0aaff;
 }
-
+ 
 .card p {
     font-size: 1.3rem;
     color: aliceblue;
     line-height: 1.5;
 }
-
+ 
 .icon {
     background:#591DDD;
     width: 60px;
@@ -175,19 +175,19 @@ li:hover {
     margin-bottom: 20px;
     box-shadow: 0 0 50px 4px #5100ff;
 }
-
+ 
 .icon i {
     font-size: 45px;
     font-weight: 100;
 }
-
+ 
 /*-------------------SEÇÃO DE PARCEIROS-------------------*/
 .parceiros {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 1000px;
+    min-width: 100%;
     min-height: 35vh;
     background-color: #000000;
 }
@@ -202,14 +202,14 @@ li:hover {
     -webkit-text-fill-color: transparent;
     color: #fffefe;
 }
-
+ 
 .parceiros-logos {
     display: flex;
     align-content: center;
     gap: 100px;
     margin-top: 20px;
 }
-
+ 
 .parceiros-logos img {
     width: 100px;
     object-fit: contain;
@@ -219,7 +219,7 @@ li:hover {
 .parceiros-logos img:hover {
     transform: scale(1.1);
 }
-
+ 
 /*-------------------SEÇÃO DE CRONOMETRO-------------------*/
 .countdown-container {
     display: flex;
@@ -230,7 +230,7 @@ li:hover {
     text-align: center;
     background: var(--color1);
 }
-
+ 
 .countdown-container h1 {
     font-size: 42px;
     font-weight: 800;
@@ -241,14 +241,14 @@ li:hover {
     color: var(--text-color1);
     margin-bottom: 50px;
 }
-
+ 
 .countdown {
     display: flex;
     gap: 30px;
     justify-content: center;
     align-items: center;
 }
-
+ 
 .time-box {
     display: flex;
     flex-direction: column;
@@ -261,7 +261,7 @@ li:hover {
     height: 180px;
     text-align: center;
 }
-
+ 
 .time-box span {
     font-size: 52px;
     font-weight: 800;
@@ -271,7 +271,7 @@ li:hover {
     -webkit-text-fill-color: transparent;
     color: var(--text-color1);
 }
-
+ 
 .time-box p {
     margin-top: 10px;
     font-size: 18px;
@@ -281,9 +281,9 @@ li:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: var(--text-color1);
-
+ 
 }
-
+ 
 /*-------------------SEÇÃO DE INSCRICAO-------------------*/
 .inscricao-fora {
     min-height: 60vh;
@@ -292,7 +292,7 @@ li:hover {
     align-items: center;
     background: #000000;
 }
-
+ 
 .inscriçao {
     display: flex;
     flex-direction: column;
@@ -319,14 +319,14 @@ li:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
+ 
 .input {
     display: flex;
     flex-direction: column;
     gap: 15px;
     margin-bottom: 20px;
 }
-
+ 
 .input input {
     padding: 12px;
     font-size: 16px;
@@ -338,7 +338,7 @@ li:hover {
     color: #bebebe;
     background: transparent;
 }
-
+ 
 button {
     display: flex;
     align-items: center;
@@ -354,7 +354,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
-
+ 
 /*--------------- popup de confirmação-----------------*/
 .popup {
     position: fixed;
@@ -368,7 +368,7 @@ button {
     justify-content: center;
     z-index: 1000;
 }
-
+ 
 .popup-content {
     background-color: #21002C;
     padding: 20px;
@@ -376,13 +376,13 @@ button {
     text-align: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
-
+ 
 .popup-content p {
     color: #f0aaff;
     font-size: 1.5em;
     margin-bottom: 20px;
 }
-
+ 
 .popup-content button {
     background-color: #591DDD;
     color: white;
@@ -392,95 +392,98 @@ button {
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
+ 
 .popup-content button:hover {
     background-color: #350076;
 }
-
-
+ 
+ 
 /*-------------------SEÇÃO DE RODAPE-------------------*/
 .rodape {
     background: #000000;
     text-align: center;
     padding: 20px 0;
 }
-
+ 
 /*--- MEDIA QUERIES PARA TABLET E MOBILE ---*/
 @media (max-width: 1024px) {
     .home-content h1 {
         font-size: 56px;
     }
-    
+   
     .container h1 {
         font-size: 3em;
     }
-    
+   
     .grid {
         grid-template-columns: 1fr;
         padding: 0 50px;
     }
-    
+   
     .parceiros-logos {
         gap: 50px;
     }
-    
+   
     .inscriçao {
         min-width: 80%;
         padding: 20px;
     }
-    
+   
     .menu ul {
         gap: 15px;
     }
 }
-
+ 
 @media (max-width: 768px) {
     .home-content h1 {
         font-size: 36px;
     }
-
+ 
     .home-content p {
         font-size: 16px;
     }
-
+ 
     .container h1 {
         font-size: 3em;
     }
-    
+   
     .time-box {
         width: 100px;
         height: 120px;
     }
-
+ 
     .time-box span {
         font-size: 36px;
     }
 }
-
+ 
 @media (max-width: 480px) {
+    .logo img {
+        width: 50px;
+    }
     .header {
         flex-direction: column;
         padding: 10px;
     }
-
+ 
     .menu ul {
         flex-direction: column;
         align-items: center;
     }
-
+ 
     .home-content h1 {
         font-size: 28px;
     }
-
+ 
     .home-content p {
         font-size: 14px;
     }
-    
+   
     .home-content button {
         width: 100px;
         height: 35px;
     }
-    
+   
     .container h1 {
         font-size: 2em;
     }
@@ -488,7 +491,7 @@ button {
         flex-direction: column;
         gap: 20px;
     }
-
+ 
     .time-box {
         width: 80px;
         height: 100px;
@@ -519,3 +522,4 @@ button {
         gap: 50px;
     }
 }
+ 

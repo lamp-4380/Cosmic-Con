@@ -1,114 +1,153 @@
-body {
+
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #000000;
-    color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    background: #560070;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #ea80ff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid #ea80ff;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    color: #ea80ff;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Aplicar a animação de entrada aos cartões */
+.card {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    opacity: 0; /* Começa invisível */
+    transform: translateY(30px); /* Começa deslocado para baixo */
+    animation: slideIn 1s forwards; /* Animação de entrada */
+    animation-delay: var(--delay); /* Atraso dinâmico para cada cartão */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid #ea80ff;
+    margin-bottom: 15px;
+    opacity: 0;
+    animation: fadeIn 1s forwards 0.5s;
+}
+.contatos {
+    padding-top: 30px;
+}
+.contatos a {
+    font-size: 24px;
+    color: whitesmoke;
+}
+
+.contatos a:hover {
+    color: #ea80ff;
 }
 
 .voltar {
-    display: inline-block;
-    margin: 20px;
     font-size: 18px;
     color: #FFF;
     text-decoration: none;
 }
 
 .cima {
-    display: flex;
-    align-content: space-between;
-}
-.logo {
-  position: absolute;
-  top: 10px; 
-  right: 10px; 
-  width: 50px; 
-  height: auto;
-  border-radius: 0px;
-}
-.perfis {
-    display: flex;
-    flex-direction: column;
-    margin-left: 400px;
-    gap: 30px;
-    padding: 20px;
-}
-
-.perfil {
-    display: flex;
-    gap: 100px;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-img {
-    border-radius: 50px; 
-    width: 400px; 
-    height: 400px;
-}
-
-.nome{
-    font-size: 40px;
-}
-a {
-    color: white;
-} i {
-    font-size: 24px;
-}
-@media (max-width: 768px) {
-    /* Ajustes para celulares e tablets pequenos */
-    .logo {
-        width: 40px; /* Logo menor */
-        top: 5px;
-        right: 5px;
-    }
-
-    .voltar {
-        font-size: 16px;
-        margin: 10px;
-    }
-
-    .perfis {
-        margin-left: 20px; /* Reduzir a margem para celulares */
-        gap: 20px; /* Menor espaçamento */
-        padding: 10px;
-    }
-
-    .perfil {
-        gap: 30px; /* Ajusta o gap entre os elementos */
-    }
-
-    img {
-        width: 250px; /* Reduzir o tamanho da imagem */
-        height: 250px;
-    }
-
-    .nome {
-        font-size: 30px; /* Ajuste no tamanho da fonte */
-    }
-}
-
-/* Media Query para tablets e dispositivos de tela média */
-@media (max-width: 1024px) {
-    .logo {
-        width: 45px;
-    }
-
-    .perfis {
-        margin-left: 150px; /* Menos margem para telas médias */
-        gap: 25px;
-    }
-
-    .perfil {
-        gap: 50px;
-    }
-
-    img {
-        width: 300px;
-        height: 300px;
-    }
-
-    .nome {
-        font-size: 35px;
-    }
+    width: 70%;
+    text-align: start;
 }
