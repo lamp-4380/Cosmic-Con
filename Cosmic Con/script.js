@@ -1,6 +1,6 @@
 // contador
 
-const targetDate = new Date(new Date().getFullYear(), 10, 15, 23, 59, 59);
+const targetDate = new Date(new Date().getFullYear(), 10, 22, 23, 59, 59);
 
 function updateCountdown() {
     const now = new Date().getTime();
